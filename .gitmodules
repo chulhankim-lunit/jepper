@@ -1,0 +1,6 @@
+[submodule "print_hello"]
+	path = print_hello
+	url = ../jepper-task-print-hello.git
+[submodule "sort"]
+	path = sort
+	url = ../jepper-task-sort.git
