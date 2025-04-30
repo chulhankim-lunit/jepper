@@ -13,7 +13,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          submodules: true
+          submodules: recursive
           token: ${{ secrets.GH_PAT }}
       - name: Deploy
         run: /bin/bash deploy.sh ${{ secrets.GH_PAT }}
