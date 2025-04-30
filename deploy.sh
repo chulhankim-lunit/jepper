@@ -3,6 +3,7 @@
 args=($@)
 token=${args[0]}
 submodules=$(git submodule status)
+echo $submodules
 
 while read -r line || [[ -n $line ]]; do
     name=$(awk -F '[ ]' '{print $2}' <<< $line)
